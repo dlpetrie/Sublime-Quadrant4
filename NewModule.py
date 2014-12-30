@@ -30,12 +30,12 @@ class Q4NewModuleCommand(sublime_plugin.WindowCommand):
 
             # convert to json
             structure = json.loads(contents)
-            print(contents)
-            print(structure)
 
+            # create directories
             if 'directories' in structure.keys():
                 self.createDirectories(structure['directories'])
 
+            # create files
             if 'files' in structure.keys():
                 self.createFiles(structure['files'])
 

@@ -15,7 +15,7 @@
                         "command": "q4_new_module",
                         "args": {
                             "dirs": [],
-                            "type": "FED",
+                            "moduleType": "fed",
                         }
                     },
                     {
@@ -23,7 +23,7 @@
                         "command": "q4_new_module",
                         "args": {
                             "dirs": [],
-                            "type": "PHP",
+                            "moduleType": "php",
                         }
                     }
                 ]

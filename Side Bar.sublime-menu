@@ -1,0 +1,33 @@
+[
+    {
+        "caption": "-",
+        "id": "quadrant4-side-bar-separator",
+    },
+    {
+        "caption": "Quadrant4",
+        "command": "q4_is_directory",
+        "children": [
+            {
+                "caption": "New Module",
+                "children": [
+                    {
+                        "caption": "FED Module",
+                        "command": "q4_new_module",
+                        "args": {
+                            "dirs": [],
+                            "type": "FED",
+                        }
+                    },
+                    {
+                        "caption": "PHP Module",
+                        "command": "q4_new_module",
+                        "args": {
+                            "dirs": [],
+                            "type": "PHP",
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

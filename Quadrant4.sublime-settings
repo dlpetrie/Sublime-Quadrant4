@@ -1,0 +1,17 @@
+{
+    "new_module": {
+        "mappers": {
+            "fed": {
+                "directories": [
+                    "[[[ModuleName]]]"
+                ],
+                "files": [
+                    "[[[ModuleName]]]/[[[ModuleName]]].phtml",
+                    "[[[ModuleName]]]/[[[ModuleName]]].scss",
+                    "[[[ModuleName]]]/[[[ModuleName]]].css",
+                    "[[[ModuleName]]]/[[[ModuleName]]].js"
+                ]
+            },
+        }
+    }
+}

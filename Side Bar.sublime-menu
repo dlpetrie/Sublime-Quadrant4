@@ -9,24 +9,10 @@
         "children": [
             {
                 "caption": "New Module",
-                "children": [
-                    {
-                        "caption": "FED Module",
-                        "command": "q4_new_module",
-                        "args": {
-                            "dirs": [],
-                            "moduleType": "fed",
-                        }
-                    },
-                    {
-                        "caption": "PHP Module",
-                        "command": "q4_new_module",
-                        "args": {
-                            "dirs": [],
-                            "moduleType": "php",
-                        }
-                    }
-                ]
+                "command": "create_module_side_bar",
+                "args": {
+                    "dirs": [],
+                }
             }
         ]
     }

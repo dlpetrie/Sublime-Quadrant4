@@ -12,6 +12,20 @@
                     "[[[ModuleName]]]/[[[ModuleName]]].js"
                 ]
             },
+            "zend_psr4": {
+                "directories": [
+                    "[[[ModuleName]]]",
+                    "[[[ModuleName]]]/config",
+                    "[[[ModuleName]]]/Controller",
+                    "[[[ModuleName]]]/Model",
+                ],
+                "files": [
+                    "[[[ModuleName]]]/config/module.config.php",
+                    "[[[ModuleName]]]/config/service_manager.php",
+                    "[[[ModuleName]]]/config/controllers.php",
+                    "[[[ModuleName]]]/Module.php"
+                ]
+            }
         }
     }
 }

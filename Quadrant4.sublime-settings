@@ -1,7 +1,8 @@
 {
     "new_module": {
         "mappers": {
-            "fed": {
+            // q4 mappers
+            "q4.fed": {
                 "directories": [
                     "[[[ModuleName]]]"
                 ],
@@ -12,7 +13,8 @@
                     "[[[ModuleName]]]/[[[ModuleName]]].js"
                 ]
             },
-            "zend_psr4": {
+            // zend mappers
+            "zend.psr4": {
                 "directories": [
                     "[[[ModuleName]]]",
                     "[[[ModuleName]]]/config",

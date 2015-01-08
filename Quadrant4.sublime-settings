@@ -7,10 +7,19 @@
                     "[[[ModuleName]]]"
                 ],
                 "files": [
-                    "[[[ModuleName]]]/[[[ModuleName]]].phtml",
-                    "[[[ModuleName]]]/[[[ModuleName]]].scss",
-                    "[[[ModuleName]]]/[[[ModuleName]]].css",
-                    "[[[ModuleName]]]/[[[ModuleName]]].js"
+                    {
+                        "name": "[[[ModuleName]]]/[[[ModuleName]]].phtml",
+                        "template": "template.phtml"
+                    },
+                    {
+                        "name": "[[[ModuleName]]]/[[[ModuleName]]].scss",
+                        "template": "template.scss"
+                    },
+                    {
+                        "name": "[[[ModuleName]]]/[[[ModuleName]]].js",
+                        "template": "template.js"
+                    },
+                    "[[[ModuleName]]]/[[[ModuleName]]].css"
                 ]
             },
             // zend mappers
@@ -28,6 +37,7 @@
                     "[[[ModuleName]]]/Module.php"
                 ]
             }
-        }
+        },
+        "template_path": ""
     }
 }

@@ -8,6 +8,8 @@ class NewModule:
     # path to where to insert directory
     basePath = ""
 
+    templatePath = ""
+
     # mappers list
     mappers = []
 
@@ -58,6 +60,16 @@ class NewModule:
 
     def createFiles(self, files):
         for newFile in files:
-            newFile = newFile.replace('[[[ModuleName]]]', self.name)
-            f = open(self.basePath + newFile, 'w+')
+            type(newFile)
+            if isinstance(newFile, dict):
+                fileName = newFile['name'].replace('[[[ModuleName]]]', self.name)
+                template = open(self.templatePath+newFile['template'], 'r')
+                contents = template.read().replace('[[[ModuleName]]]', self.name);
+                template.close()
+            else:
+                fileName = newFile.replace('[[[ModuleName]]]', self.name)
+                contents = ''
+
+            f = open(self.basePath + fileName, 'w+')
+            f.write(contents)
             f.close()

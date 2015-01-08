@@ -14,4 +14,5 @@ class CreateModuleSideBarCommand(sublime_plugin.WindowCommand, Quadrant4.new_mod
     def run(self, dirs):
         self.basePath = dirs[0] + "/";
         self.settings = sublime.load_settings("Quadrant4.sublime-settings").get('new_module')
+        self.templatePath = self.settings['template_path'] if self.settings['template_path'] else self.basePath+'templates/'
         self.createModule()
